@@ -2,9 +2,9 @@
 <hudson>
   <disabledAdministrativeMonitors/>
   <version>2.107.3</version>
-  <installState>
+  <installState class="jenkins.install.InstallState$3">
     <isSetupComplete>false</isSetupComplete>
-    <name>INITIAL_PLUGINS_INSTALLING</name>
+    <name>CREATE_ADMIN_USER</name>
   </installState>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
