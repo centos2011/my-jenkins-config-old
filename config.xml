@@ -4,7 +4,7 @@
   <version>2.107.3</version>
   <installState>
     <isSetupComplete>false</isSetupComplete>
-    <name>NEW</name>
+    <name>INITIAL_PLUGINS_INSTALLING</name>
   </installState>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
