@@ -25,7 +25,7 @@
   <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
   <jdks>
     <jdk>
-      <name>jdk1.7</name>
+      <name>JAVA_HOME</name>
       <home></home>
       <properties>
         <hudson.tools.InstallSourceProperty>
