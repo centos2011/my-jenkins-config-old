@@ -2,7 +2,7 @@
 <project>
   <actions/>
   <description>PDAX Frontend Production Deployment</description>
-  <keepDependencies>true</keepDependencies>
+  <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
@@ -51,7 +51,6 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
-  <customWorkspace>/home/deployer/pdax-web</customWorkspace>
   <builders>
     <hudson.tasks.Shell>
       <command>
