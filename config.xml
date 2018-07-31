@@ -3,10 +3,8 @@
   <disabledAdministrativeMonitors>
     <string>jenkins.security.s2m.MasterKillSwitchWarning</string>
   </disabledAdministrativeMonitors>
-  <version>2.107.3</version>
-  <installState>
-    <name>RUNNING</name>
-  </installState>
+  <version>2.121.2</version>
+  <installStateName>RUNNING</installStateName>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
