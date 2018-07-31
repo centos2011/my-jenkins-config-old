@@ -56,7 +56,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>/usr/bin/aws deploy push --application-name pdax-web-prod --s3-location s3://pdax-circleci/pdax-web-prod --region=ap-southeast-1 &gt; deploy.sh
+      <command>sudo su - deployer
+
+/usr/bin/aws deploy push --application-name pdax-web-prod --s3-location s3://pdax-circleci/pdax-web-prod --region=ap-southeast-1 &gt; deploy.sh
 
 sed -i &apos;1d&apos; deploy.sh
 
