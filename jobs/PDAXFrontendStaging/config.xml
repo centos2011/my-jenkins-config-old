@@ -53,7 +53,20 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ls</command>
+      <command>ls
+/usr/bin/aws deploy push --application-name pdax-web-prod --s3-location s3://pdax-circleci/pdax-web-staging --region=ap-southeast-1 &gt; deploy.sh
+
+sed -i &apos;1d&apos; /home/deployer/pdax-web/scripts/deploy/deploy.sh
+
+sed -i &quot;s#&lt;deployment-group-name&gt;#pdax-web-staging#g&quot; /home/deployer/pdax-web/scripts/deploy/deploy.sh
+
+sed -i &apos;s/--deployment-config-name &lt;deployment-config-name&gt;/--region=ap-southeast-1 --output text/&apos; deploy.sh
+
+sed -i &apos;s#&lt;description&gt;#&quot;PDAX Web Staging&quot;#g&apos; deploy.sh
+
+cat deploy.sh
+
+#/bin/sh -x deploy.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
