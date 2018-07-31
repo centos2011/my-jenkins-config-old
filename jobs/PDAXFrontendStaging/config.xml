@@ -23,6 +23,7 @@
       <hudson.plugins.git.extensions.impl.CheckoutOption>
         <timeout>5</timeout>
       </hudson.plugins.git.extensions.impl.CheckoutOption>
+      <hudson.plugins.git.extensions.impl.CleanBeforeCheckout/>
     </extensions>
   </scm>
   <canRoam>true</canRoam>
