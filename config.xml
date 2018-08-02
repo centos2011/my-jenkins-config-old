@@ -4,8 +4,7 @@
     <string>jenkins.security.s2m.MasterKillSwitchWarning</string>
   </disabledAdministrativeMonitors>
   <version>2.107.3</version>
-  <installState class="jenkins.install.InstallState$6">
-    <isSetupComplete>true</isSetupComplete>
+  <installState class="jenkins.install.InstallState$Downgrade">
     <name>DOWNGRADE</name>
   </installState>
   <numExecutors>2</numExecutors>
@@ -30,7 +29,7 @@
       <properties>
         <hudson.tools.InstallSourceProperty>
           <installers>
-            <hudson.tools.JDKInstaller>
+            <hudson.tools.JDKInstaller plugin="jdk-tool@1.0">
               <id>jdk-7u80-oth-JPR</id>
               <acceptLicense>true</acceptLicense>
             </hudson.tools.JDKInstaller>
