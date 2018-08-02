@@ -4,6 +4,10 @@
     <string>jenkins.security.s2m.MasterKillSwitchWarning</string>
   </disabledAdministrativeMonitors>
   <version>2.121.2</version>
+  <installState class="jenkins.install.InstallState$6">
+    <isSetupComplete>true</isSetupComplete>
+    <name>DOWNGRADE</name>
+  </installState>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
