@@ -28,12 +28,12 @@
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
         <url>https://github.com/PixoPH/pixo-web</url>
-        <credentialsId>bcaf34b6-3134-459e-bdfd-b57f806969b5</credentialsId>
+        <credentialsId>f96833b9-6066-4895-85b2-f35e002957b8</credentialsId>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/master</name>
+        <name>*/staging</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -61,10 +61,10 @@ sed -i &apos;s/--deployment-config-name &lt;deployment-config-name&gt;/--region=
 
 sed -i &apos;s#&lt;description&gt;#&quot;PDAX Web Staging&quot;#g&apos; deploy.sh
 
-#cat deploy.sh
+cat deploy.sh
 
 #Uncomment the next line to deploy in AWS via Code-deploy
-/bin/sh -x deploy.sh</command>
+#/bin/sh -x deploy.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
