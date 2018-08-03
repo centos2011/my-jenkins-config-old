@@ -4,7 +4,7 @@
   <description>Administrator</description>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAABwuMHSdJPVOeeiZnPcWUrL9BzQ99K79gOT6PsOXvQzbXoKKNU8o5vj8gvER3nDWHQtRYgd4Va/a/FxUqSltVWltW+F4N/jlapm9c9DJRH2ZxBYFKAhGTKn9KcrKtGAbJ6Rdddm45sYZsNkxy0tClFQAGZWqpJPZ0tRrHKRHeSTAko=}</apiToken>
+      <apiToken>{AQAAABAAAADABJYgK5pOuVUd5hzmvPNMB6mhplP1WaovapPi+3YD6faDtNGpFA8lmpVecy5SKlMLo/6C7JIHPQdeermNq1ZxVVlRwDqOmtqam2FMMlSgb6Q95SUwMu0bJLABQIeJsrEf/9nODIq9+xx9TBdsVVzawDkAtm/Vg+HFnP6kffwUPBstuo0R0P4m2IeiKiavZ5jkT8xljV4gyV3gmev9dSumHZMK2cphUBpaXbEol7N8gnMav3Hqs6dU9yD4KNz7v62PQfW2HGb8nVPdLHFr+KyAfQ==}</apiToken>
     </jenkins.security.ApiTokenProperty>
     <hudson.plugins.greenballs.ColorBlindProperty plugin="greenballs@1.15">
       <enabledColorBlindSupport>false</enabledColorBlindSupport>
@@ -40,7 +40,7 @@
       <collapsed/>
     </hudson.model.PaneStatusProperties>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>#jbcrypt:$2a$10$XvIee4CQQR0PB0GJpc9hROazc8yJtwfXabVFbj8L9JQmM2WXnW.cK</passwordHash>
+      <passwordHash>#jbcrypt:$2a$10$MdOLKAqD/ZTvJCE4n4nV..fXB34tLFDfjVz4.nnTkYfnRx6kC770C</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
     <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
       <authorizedKeys></authorizedKeys>
