@@ -4,7 +4,7 @@
   <description>Administrator</description>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAADABJYgK5pOuVUd5hzmvPNMB6mhplP1WaovapPi+3YD6faDtNGpFA8lmpVecy5SKlMLo/6C7JIHPQdeermNq1ZxVVlRwDqOmtqam2FMMlSgb6Q95SUwMu0bJLABQIeJsrEf/9nODIq9+xx9TBdsVVzawDkAtm/Vg+HFnP6kffwUPBstuo0R0P4m2IeiKiavZ5jkT8xljV4gyV3gmev9dSumHZMK2cphUBpaXbEol7N8gnMav3Hqs6dU9yD4KNz7v62PQfW2HGb8nVPdLHFr+KyAfQ==}</apiToken>
+      <apiToken>{AQAAABAAAAEwPJPtdMLmOA8fbnBjBEsGtk3WZrreQnCgmjJUdJKN/6M/myT89WkErONgwBjvpabshh6L3jAsW5nPiGu/7erMqT6F67cLC0f/vpaIjWKfpF2Hvh4AGOVO44dphVFPzKqO8FcHPC32Qfi8dQyEpqf5SyroIoTPS9oIezW8rjowjLD6dpEmtR/0+j033BsS/iPhQIYuYWvGyp/tN7NihS767wsTStWioZl5wSo6s50Ap/ul/X6UVjjDjG/TMpcwqUlTb+danKbxHHpZrMjHiAP/W0QDnRc6/Bj+7gFOmHnitOvQkGAMtSzd4C+UxDiRjKPLft0SZsoWDr2Ap0DcVRaG3M7hNNKI1eXxIUpG/0A+ek4DQh2IFs+CI6gphVXXTKiBH9SAsI+69q5IZU0k5ySled2KHDH10qjlE4mGsdsrgc0=}</apiToken>
     </jenkins.security.ApiTokenProperty>
     <hudson.plugins.greenballs.ColorBlindProperty plugin="greenballs@1.15">
       <enabledColorBlindSupport>false</enabledColorBlindSupport>
@@ -40,7 +40,7 @@
       <collapsed/>
     </hudson.model.PaneStatusProperties>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>#jbcrypt:$2a$10$63E/phNOESb9jVACpPaML.IZjhYVFYNV5F2pZEdmzFAqE/xtHefEm</passwordHash>
+      <passwordHash>#jbcrypt:$2a$10$3b.90etZHwDQTIRwYioV0.CI/1MeaPgTY7TqP9gI3wPB/5oLyS3Bm</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
     <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
       <authorizedKeys></authorizedKeys>
