@@ -4,10 +4,8 @@
     <string>jenkins.security.s2m.MasterKillSwitchWarning</string>
     <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
   </disabledAdministrativeMonitors>
-  <version>2.107.3</version>
-  <installState class="jenkins.install.InstallState$Downgrade">
-    <name>DOWNGRADE</name>
-  </installState>
+  <version>2.121.2</version>
+  <installStateName>DOWNGRADE</installStateName>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
