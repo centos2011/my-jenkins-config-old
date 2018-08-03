@@ -5,8 +5,7 @@
     <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
   </disabledAdministrativeMonitors>
   <version>2.107.3</version>
-  <installState class="jenkins.install.InstallState$6">
-    <isSetupComplete>true</isSetupComplete>
+  <installState class="jenkins.install.InstallState$Downgrade">
     <name>DOWNGRADE</name>
   </installState>
   <numExecutors>2</numExecutors>
