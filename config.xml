@@ -5,6 +5,10 @@
     <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
   </disabledAdministrativeMonitors>
   <version>2.121.2</version>
+  <installState class="jenkins.install.InstallState$5">
+    <isSetupComplete>true</isSetupComplete>
+    <name>RESTART</name>
+  </installState>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
