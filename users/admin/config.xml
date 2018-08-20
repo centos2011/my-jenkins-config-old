@@ -4,11 +4,8 @@
   <description>Administrator</description>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAAEwPJPtdMLmOA8fbnBjBEsGtk3WZrreQnCgmjJUdJKN/6M/myT89WkErONgwBjvpabshh6L3jAsW5nPiGu/7erMqT6F67cLC0f/vpaIjWKfpF2Hvh4AGOVO44dphVFPzKqO8FcHPC32Qfi8dQyEpqf5SyroIoTPS9oIezW8rjowjLD6dpEmtR/0+j033BsS/iPhQIYuYWvGyp/tN7NihS767wsTStWioZl5wSo6s50Ap/ul/X6UVjjDjG/TMpcwqUlTb+danKbxHHpZrMjHiAP/W0QDnRc6/Bj+7gFOmHnitOvQkGAMtSzd4C+UxDiRjKPLft0SZsoWDr2Ap0DcVRaG3M7hNNKI1eXxIUpG/0A+ek4DQh2IFs+CI6gphVXXTKiBH9SAsI+69q5IZU0k5ySled2KHDH10qjlE4mGsdsrgc0=}</apiToken>
+      <apiToken>{AQAAABAAAAHA1d7u0L8apl09Xdi5cLAPmArrcQXmWxJIhIK1x0O19CYLR/E9fonX4Rv/bvBMf2TYc2N3bB/Fdii6Rzkocmko/NChqNa6XSCrescx7GvT99CZrGP8iS0ObwEfdhHZCw/DKsL6y1eTnFSOF2Fr7D8HV8tuN+g4vuteXnbVZVBHXi06D3CWA2FynirBfuhX/Vcuu2Phu8ZSB2ZfSrcmZ/Pd9StB8niajCm16fAOKAtU1I2rvDKfQMqkBxvCechUA1M/3uEJs8ISn/ra7VmQ/OuZzPufElx6lYXSGQ3D9dt70Gd7EYxUNABcVaAY736PVxqTc72QoxBsnOqFu2J2xA6SZUvCQINHZ0l/DE/Nk5laLpXTzlnRt00Bs7GhBqfFh51MnlKSVcJwrxhkqMVLewDveIoKjBMvh5oBn7pCRxjZMkrwQkjrqnAqQ6R2rDpGPWc9KyD5Ya2iD5pHry+XbxL8YpGAET05clmQT/ntvaYv6UglZlycLiUe8cW8lrGPPvuX5N/MdHf1riF5Fd96B3aEhWEPP/oQLLDDDTiJmqzEVx3yfs9I3vb2u0vbihgACaC1w0FJIzqwsaB16/hhzQlmexySex+XEloLtL6fTtPfVFg=}</apiToken>
     </jenkins.security.ApiTokenProperty>
-    <hudson.plugins.greenballs.ColorBlindProperty plugin="greenballs@1.15">
-      <enabledColorBlindSupport>false</enabledColorBlindSupport>
-    </hudson.plugins.greenballs.ColorBlindProperty>
     <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@2.1.18">
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
     </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
