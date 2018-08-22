@@ -28,7 +28,7 @@
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
         <url>https://github.com/PixoPH/pixo-web.git</url>
-        <credentialsId>2e639757-1668-491f-a9d7-18514f789623</credentialsId>
+        <credentialsId>c2bc7216-8b3c-4c30-8d44-fe712bea9c3e</credentialsId>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
