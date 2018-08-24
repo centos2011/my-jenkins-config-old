@@ -40,9 +40,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>uname -a
-
-pwd</command>
+      <command>sh -x /jenkins/workspace/PDAX-Backend-Staging/deployment-tools/circleci/build-backend.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
