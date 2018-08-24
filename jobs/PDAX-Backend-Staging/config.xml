@@ -40,7 +40,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>sh -x /jenkins/workspace/PDAX-Backend-Staging/deployment-tools/circleci/build-backend.sh</command>
+      <command>sh -x /root/jenkins/workspace/PDAX-Backend-Staging/deployment-tools/circleci/build-backend.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
