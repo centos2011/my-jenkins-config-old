@@ -9,7 +9,7 @@
         <hudson.model.StringParameterDefinition>
           <name>git_branch</name>
           <description>GIT branch</description>
-          <defaultValue>release-candidate-1.0.b</defaultValue>
+          <defaultValue>release-candidate-1.0-b</defaultValue>
           <trim>false</trim>
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
@@ -25,7 +25,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/release-candidate-1.0.b</name>
+        <name>*/release-candidate-1.0-b</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
