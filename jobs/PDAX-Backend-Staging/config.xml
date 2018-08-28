@@ -40,7 +40,17 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>sh -x /root/jenkins/workspace/PDAX-Backend-Staging/deployment-tools/circleci/build-backend.sh</command>
+      <command>rm -rf /go/src/github.com/PixoPH/
+
+export GOPATH=/go
+export GOROOT=/usr/local/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+mkdir /go/src/github.com/PixoPH/ &amp;&amp; cp -r /root/jenkins/workspace/PDAX-Backend-Staging/ /go/src/github.com/PixoPH/backend
+
+cd /go/src/github.com/PixoPH/backend/deployment-tools
+
+sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/build-backend.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
