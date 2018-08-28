@@ -1,0 +1,70 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>git_branch</name>
+          <description>GIT branch</description>
+          <defaultValue>release-candidate-1.0-b</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/PixoPH/backend</url>
+        <credentialsId>1fad218e-7061-45fa-a3b7-8932115e6949</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/release-candidate-1.0-b</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>rm -rf /go/src/github.com/PixoPH/
+
+export GOPATH=/go
+export GOROOT=/usr/local/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+mkdir /go/src/github.com/PixoPH/ &amp;&amp; cp -r /root/jenkins/workspace/PDAX-Backend-Prod/ /go/src/github.com/PixoPH/backend
+
+cd /go/src/github.com/PixoPH/backend/deployment-tools
+
+aws s3 cp s3://pdax-cert/apiprod_pdax_ph.crt .
+
+aws s3 cp s3://pdax-cert/pdax.key .
+
+sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/build-backend.sh
+
+sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/configure-prod-server.sh
+
+aws deploy push --application-name pdax-backend --s3-location s3://pdax-circleci/pdax-backend-ws-prod.zip --ignore-hidden-files --region=ap-southeast-1 &gt;&gt; deploy.sh &amp;&amp; sh -x ./circleci/make-prod-deployment.sh
+
+cat deploy.sh
+
+sh deploy-and-monitor.sh</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
