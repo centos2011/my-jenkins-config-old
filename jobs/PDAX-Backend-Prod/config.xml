@@ -50,11 +50,17 @@ mkdir /go/src/github.com/PixoPH/ &amp;&amp; cp -r /root/jenkins/workspace/PDAX-B
 
 cd /go/src/github.com/PixoPH/backend/deployment-tools
 
+aws s3 cp s3://pdax-cert/apiprod_pdax_ph.crt .
+
+aws s3 cp s3://pdax-cert/pdax.key .
+
 sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/build-backend.sh
 
 sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/configure-server.sh
 
-aws deploy push --application-name pdax-backend --s3-location s3://pdax-circleci/pdax-backend-staging-monolith.zip --ignore-hidden-files --region=ap-southeast-1 &gt;&gt; deploy.sh &amp;&amp; sh -x ./circleci/make-deployment.sh
+aws s3 cp s3://pdax-circleci/ws.yml pixo.yml
+
+aws deploy push --application-name pdax-backend --s3-location s3://pdax-circleci/pdax-backend-ws-prod.zip --ignore-hidden-files --region=ap-southeast-1 &gt;&gt; deploy.sh &amp;&amp; sh -x ./circleci/make-prod-deployment.sh
 
 cat deploy.sh
 
