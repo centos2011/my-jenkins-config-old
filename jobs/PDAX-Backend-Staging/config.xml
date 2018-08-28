@@ -56,9 +56,9 @@ aws s3 cp s3://pdax-cert/pdax-selfsigned.crt apiprod_pdax_ph.crt
 
 sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/build-backend.sh
 
-sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/configure-server.sh
+sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/configure-staging-server.sh
 
-aws deploy push --application-name pdax-backend --s3-location s3://pdax-circleci/pdax-backend-staging-monolith.zip --ignore-hidden-files --region=ap-southeast-1 &gt;&gt; deploy.sh &amp;&amp; sh -x ./circleci/make-deployment.sh
+aws deploy push --application-name pdax-backend --s3-location s3://pdax-circleci/pdax-backend-staging-monolith.zip --ignore-hidden-files --region=ap-southeast-1 &gt;&gt; deploy.sh &amp;&amp; sh -x ./circleci/make-staging-deployment.sh
 
 cat deploy.sh
 
