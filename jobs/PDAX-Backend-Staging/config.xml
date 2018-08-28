@@ -54,6 +54,8 @@ sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/build-backend.
 
 sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/configure-server.sh
 
+whoami
+
 aws deploy push --application-name pdax-backend --s3-location s3://pdax-circleci/pdax-backend-staging-monolith.zip --ignore-hidden-files --region=ap-southeast-1 &gt;&gt; deploy.sh &amp;&amp; ./circleci/make-deployment.sh
 
 cat deploy.sh
