@@ -46,7 +46,7 @@ export GOPATH=/go
 export GOROOT=/usr/local/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
-mkdir /go/src/github.com/PixoPH/ &amp;&amp; cp -r /root/jenkins/workspace/PDAX-Backend-Prod/ /go/src/github.com/PixoPH/backend
+mkdir /go/src/github.com/PixoPH/ &amp;&amp; cp -r /root/jenkins/workspace/PDAX-Backend-Core/ /go/src/github.com/PixoPH/backend
 
 cd /go/src/github.com/PixoPH/backend/deployment-tools
 
@@ -56,9 +56,9 @@ aws s3 cp s3://pdax-cert/pdax.key .
 
 sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/build-backend.sh
 
-sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/configure-prod-server.sh
+sh -x /go/src/github.com/PixoPH/backend/deployment-tools/circleci/configure-core-server.sh
 
-aws deploy push --application-name pdax-backend --s3-location s3://pdax-circleci/pdax-backend-ws-prod.zip --ignore-hidden-files --region=ap-southeast-1 &gt;&gt; deploy.sh &amp;&amp; sh -x ./circleci/make-prod-deployment.sh
+aws deploy push --application-name pdax-backend --s3-location s3://pdax-circleci/pdax-backend-core-prod.zip --ignore-hidden-files --region=ap-southeast-1 &gt;&gt; deploy.sh &amp;&amp; sh -x ./circleci/make-core-deployment.sh
 
 cat deploy.sh
 
