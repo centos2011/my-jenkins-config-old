@@ -62,7 +62,7 @@ aws deploy push --application-name pdax-backend --s3-location s3://pdax-circleci
 
 cat deploy.sh
 
-sh -x deploy-and-monitor.sh</command>
+sh deploy-and-monitor.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
