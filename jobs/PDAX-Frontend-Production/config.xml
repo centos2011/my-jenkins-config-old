@@ -63,7 +63,7 @@ sed -i &apos;s#&lt;description&gt;#&quot;PDAX Web Production&quot;#g&apos; deplo
 cat deploy.sh
 
 #Comment the next line to deploy in AWS via Code-deploy
-#/bin/sh -x deploy.sh</command>
+/bin/sh -x deploy.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
