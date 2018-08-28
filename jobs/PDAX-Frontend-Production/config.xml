@@ -62,8 +62,35 @@ sed -i &apos;s#&lt;description&gt;#&quot;PDAX Web Production&quot;#g&apos; deplo
 
 cat deploy.sh
 
-#Comment the next line to deploy in AWS via Code-deploy
-/bin/sh -x deploy.sh</command>
+#Comment the next lines to deploy in AWS via Code-deploy
+
+deploy(){
+    sh deploy.sh
+}
+id=$(deploy)
+echo &quot;Deployment ID:&quot; + $id
+x=&quot;Started&quot;
+echo -n &quot;Inprogess&quot;
+while [ &quot;$x&quot; != &quot;Succeeded&quot; ]
+do
+    if [ &quot;$x&quot; = &quot;Failed&quot; ];
+    then
+        echo $x
+        exit 1
+    fi
+
+    if [ &quot;$x&quot; = &quot;Stopped&quot; ];
+    then
+        echo $x
+        exit 1
+    fi
+    
+    echo -n .
+    sleep 5s
+    x=&quot;$(aws deploy get-deployment --deployment-id $id --query &quot;deploymentInfo.[status]&quot; --region=ap-southeast-1 --output text)&quot;
+done
+echo &quot;Done&quot;
+echo $x</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
