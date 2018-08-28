@@ -46,6 +46,10 @@ export GOPATH=/go
 export GOROOT=/usr/local/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
+aws s3 cp s3://pdax-cert/pdax-selfsigned.key pdax.key
+
+aws s3 cp s3://pdax-cert/pdax-selfsigned.crt apiprod_pdax_ph.crt
+
 mkdir /go/src/github.com/PixoPH/ &amp;&amp; cp -r /root/jenkins/workspace/PDAX-Backend-Staging/ /go/src/github.com/PixoPH/backend
 
 cd /go/src/github.com/PixoPH/backend/deployment-tools
