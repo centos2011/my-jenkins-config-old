@@ -13,6 +13,8 @@
     <roleMap type="projectRoles">
       <role name="PDAX-Backend" pattern="PDAX-Backend*">
         <permissions>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>hudson.model.Item.Workspace</permission>
           <permission>hudson.model.Item.Build</permission>
         </permissions>
         <assignedSIDs>
@@ -77,7 +79,6 @@
         <assignedSIDs/>
       </role>
     </roleMap>
-    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>false</disableSignup>
