@@ -18,7 +18,6 @@
           <permission>hudson.model.Item.Workspace</permission>
           <permission>hudson.model.Item.Build</permission>
           <permission>hudson.scm.SCM.Tag</permission>
-          <permission>hudson.model.Item.Configure</permission>
           <permission>hudson.model.Item.Discover</permission>
         </permissions>
         <assignedSIDs>
