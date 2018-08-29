@@ -22,6 +22,7 @@
         </permissions>
         <assignedSIDs>
           <sid>dennis-backend</sid>
+          <sid>ssergy</sid>
         </assignedSIDs>
       </role>
       <role name="PDAX-Frontend" pattern="PDAX-Frontend.*">
@@ -83,6 +84,7 @@
         </permissions>
         <assignedSIDs>
           <sid>dennis-backend</sid>
+          <sid>ssergy</sid>
         </assignedSIDs>
       </role>
       <role name="frontend" pattern=".*">
