@@ -4,13 +4,16 @@
   <description>Administrator</description>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAAHA1d7u0L8apl09Xdi5cLAPmArrcQXmWxJIhIK1x0O19CYLR/E9fonX4Rv/bvBMf2TYc2N3bB/Fdii6Rzkocmko/NChqNa6XSCrescx7GvT99CZrGP8iS0ObwEfdhHZCw/DKsL6y1eTnFSOF2Fr7D8HV8tuN+g4vuteXnbVZVBHXi06D3CWA2FynirBfuhX/Vcuu2Phu8ZSB2ZfSrcmZ/Pd9StB8niajCm16fAOKAtU1I2rvDKfQMqkBxvCechUA1M/3uEJs8ISn/ra7VmQ/OuZzPufElx6lYXSGQ3D9dt70Gd7EYxUNABcVaAY736PVxqTc72QoxBsnOqFu2J2xA6SZUvCQINHZ0l/DE/Nk5laLpXTzlnRt00Bs7GhBqfFh51MnlKSVcJwrxhkqMVLewDveIoKjBMvh5oBn7pCRxjZMkrwQkjrqnAqQ6R2rDpGPWc9KyD5Ya2iD5pHry+XbxL8YpGAET05clmQT/ntvaYv6UglZlycLiUe8cW8lrGPPvuX5N/MdHf1riF5Fd96B3aEhWEPP/oQLLDDDTiJmqzEVx3yfs9I3vb2u0vbihgACaC1w0FJIzqwsaB16/hhzQlmexySex+XEloLtL6fTtPfVFg=}</apiToken>
+      <apiToken>{AQAAABAAAAKAYTIMOFzBNZp5W5nr3quoTxUf3A5FbhrqcOBnlgpJfSPWPx2HYavtnYeBv5SI2ZyUsAhmWLQPYrmXGly7pPOb7C3Lz4TjpeKkQo0GEwYpGFMCW8s5dztKMXW58yCzc+kJotOqGG5J+yOPw1JnriX0p8N19OsShqaI83rO6d8myg/FzAmEzuw67VagecblhTdgzh7B4P0A58oCmM0t27u+hPTOt3s5QJH4Ys4vsWb0TLf0DO5JqQcXDHA/Uip5Mba05hyX9a1U+BrwG6RCPJ0wjlNmuccdrI4lX3J4mzwvy55p8h2/0YDs3JDtj92y8dqY0kSLAJg2ZlPqpfNt7S2MlZA6wfoTf0acxhPajtn6vzS5BnCHLVigTyfF8t4n7Hrd+CXkwDc/u/V6JAPd7jn3oaBzXHGtwo5zI+bzrOfhoCkgtn/FQWaZ26KL7GquZT52JSB2pAp8ESlD9g6Y81t5LQSH/NHE/GM1TcRrY1UWmgHlORlWl79kozqdwBY2VlIZoeV182FC1tHwZB1W1UTqvVzDu+7A3QAecdTbAjKkpb87ZZ7b1OEXnw3Xp0GJ2uMvAtqQRHm4VNbkTBqBg7kxXynmnxQwIrcf0b3bGKvFFqIlYFVyoRgZOmETPH6rHR8CPV2yWt3cOxdbc1eDf/CshQf6xJb8nP9bF2YxFTiagpA/FRERYHqBwI2i7fsc1MyKAsoLwuqU9ES2RZQ7cw2LXzVKnutIZYtrcuh/XC1F228TsQTr4yZunA5FH0WpIK76eNJTq/jGgb0C57wPr7Ou5IJ7U4p9NUVrtp2S1mDKkb379Ye25VcINoWeNqPZikU9KCePzvPDzCfXS3OV/92goXNVfVmAKkXIPFdzHfgB57o=}</apiToken>
     </jenkins.security.ApiTokenProperty>
+    <hudson.plugins.greenballs.ColorBlindProperty plugin="greenballs@1.15">
+      <enabledColorBlindSupport>false</enabledColorBlindSupport>
+    </hudson.plugins.greenballs.ColorBlindProperty>
     <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@2.1.18">
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
     </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
     <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.21">
-      <emailAddress></emailAddress>
+      <emailAddress>dennis.joson@pdax.ph</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
     <jenkins.security.LastGrantedAuthoritiesProperty>
       <roles>
