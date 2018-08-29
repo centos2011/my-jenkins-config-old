@@ -84,7 +84,9 @@
         <permissions>
           <permission>hudson.model.Hudson.Read</permission>
         </permissions>
-        <assignedSIDs/>
+        <assignedSIDs>
+          <sid>dennis-frontend</sid>
+        </assignedSIDs>
       </role>
     </roleMap>
     <roleMap type="slaveRoles"/>
