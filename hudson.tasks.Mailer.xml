@@ -1,5 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <hudson.tasks.Mailer_-DescriptorImpl plugin="mailer@1.21">
+  <hudsonUrl>http://localhost:8080/</hudsonUrl>
   <smtpAuthUsername>AKIAIRJCEKEBNKSCHDRA</smtpAuthUsername>
   <smtpAuthPassword>{AQAAABAAAAAwp3TCf7VR4p0Vb5b+fyI4ouazfXcD9wIoVf8mnYJEj3wFDBSH922aM7rLOQxSsRnV2c0jdM8N6o6yVa2np4d/TA==}</smtpAuthPassword>
   <replyToAddress>dennis.joson@pdax.ph</replyToAddress>
