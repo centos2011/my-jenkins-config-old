@@ -27,7 +27,9 @@
           <permission>hudson.model.Item.Discover</permission>
           <permission>hudson.model.Run.Update</permission>
         </permissions>
-        <assignedSIDs/>
+        <assignedSIDs>
+          <sid>dennis-backend</sid>
+        </assignedSIDs>
       </role>
     </roleMap>
     <roleMap type="globalRoles">
@@ -83,6 +85,7 @@
         <assignedSIDs/>
       </role>
     </roleMap>
+    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>false</disableSignup>
