@@ -10,6 +10,14 @@
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
   <authorizationStrategy class="com.michelin.cio.hudson.plugins.rolestrategy.RoleBasedAuthorizationStrategy">
+    <roleMap type="projectRoles">
+      <role name="PDAX-Backend" pattern="PDAX-Backend*">
+        <permissions>
+          <permission>hudson.model.Item.Build</permission>
+        </permissions>
+        <assignedSIDs/>
+      </role>
+    </roleMap>
     <roleMap type="globalRoles">
       <role name="admin" pattern=".*">
         <permissions>
