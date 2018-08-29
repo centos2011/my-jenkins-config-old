@@ -72,8 +72,8 @@
           <permission>hudson.model.Run.Update</permission>
         </permissions>
         <assignedSIDs>
+          <sid>zenon</sid>
           <sid>admin</sid>
-          <sid>deployer</sid>
         </assignedSIDs>
       </role>
       <role name="backend" pattern=".*">
