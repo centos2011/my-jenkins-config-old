@@ -81,13 +81,16 @@
           <permission>hudson.model.Item.Build</permission>
           <permission>hudson.model.Item.Discover</permission>
         </permissions>
-        <assignedSIDs/>
+        <assignedSIDs>
+          <sid>dennis-backend</sid>
+        </assignedSIDs>
       </role>
       <role name="frontend" pattern=".*">
         <permissions/>
         <assignedSIDs/>
       </role>
     </roleMap>
+    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>false</disableSignup>
