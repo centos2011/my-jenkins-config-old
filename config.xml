@@ -75,19 +75,19 @@
       <role name="backend" pattern=".*">
         <permissions>
           <permission>hudson.model.Hudson.Read</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>hudson.model.Item.Workspace</permission>
           <permission>hudson.model.Item.Build</permission>
-          <permission>hudson.model.Computer.Build</permission>
+          <permission>hudson.model.Item.Discover</permission>
         </permissions>
         <assignedSIDs/>
       </role>
       <role name="frontend" pattern=".*">
-        <permissions>
-          <permission>hudson.model.Computer.Build</permission>
-        </permissions>
+        <permissions/>
         <assignedSIDs/>
       </role>
     </roleMap>
-    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>false</disableSignup>
