@@ -84,9 +84,12 @@
         <permissions>
           <permission>hudson.model.Hudson.Read</permission>
         </permissions>
-        <assignedSIDs/>
+        <assignedSIDs>
+          <sid>Dennis Frontend</sid>
+        </assignedSIDs>
       </role>
     </roleMap>
+    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>false</disableSignup>
