@@ -24,6 +24,13 @@
           <sid>dennis-backend</sid>
         </assignedSIDs>
       </role>
+      <role name="PDAX-Frontend" pattern="PDAX-Frontend.*">
+        <permissions>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>hudson.model.Item.Build</permission>
+        </permissions>
+        <assignedSIDs/>
+      </role>
     </roleMap>
     <roleMap type="globalRoles">
       <role name="admin" pattern=".*">
@@ -74,7 +81,9 @@
         </assignedSIDs>
       </role>
       <role name="frontend" pattern=".*">
-        <permissions/>
+        <permissions>
+          <permission>hudson.model.Hudson.Read</permission>
+        </permissions>
         <assignedSIDs/>
       </role>
     </roleMap>
