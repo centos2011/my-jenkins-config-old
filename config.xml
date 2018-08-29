@@ -71,7 +71,9 @@
         </assignedSIDs>
       </role>
       <role name="backend" pattern=".*">
-        <permissions/>
+        <permissions>
+          <permission>hudson.model.Hudson.Read</permission>
+        </permissions>
         <assignedSIDs>
           <sid>dennis-backend</sid>
         </assignedSIDs>
