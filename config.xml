@@ -13,15 +13,19 @@
     <roleMap type="projectRoles">
       <role name="PDAX-Backend" pattern="PDAX-Backend*">
         <permissions>
+          <permission>hudson.model.Item.Create</permission>
+          <permission>hudson.model.Run.Delete</permission>
+          <permission>hudson.model.Item.Workspace</permission>
+          <permission>hudson.model.Run.Replay</permission>
+          <permission>hudson.model.Item.Configure</permission>
           <permission>hudson.model.Item.Cancel</permission>
           <permission>hudson.model.Item.Delete</permission>
           <permission>hudson.model.Item.Read</permission>
-          <permission>hudson.model.Item.Create</permission>
-          <permission>hudson.model.Item.Workspace</permission>
           <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.scm.SCM.Tag</permission>
           <permission>hudson.model.Item.Move</permission>
-          <permission>hudson.model.Item.Configure</permission>
           <permission>hudson.model.Item.Discover</permission>
+          <permission>hudson.model.Run.Update</permission>
         </permissions>
         <assignedSIDs>
           <sid>dennis-backend</sid>
