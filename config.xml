@@ -15,7 +15,9 @@
         <permissions>
           <permission>hudson.model.Item.Build</permission>
         </permissions>
-        <assignedSIDs/>
+        <assignedSIDs>
+          <sid>dennis-backend</sid>
+        </assignedSIDs>
       </role>
     </roleMap>
     <roleMap type="globalRoles">
@@ -75,6 +77,7 @@
         <assignedSIDs/>
       </role>
     </roleMap>
+    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>false</disableSignup>
