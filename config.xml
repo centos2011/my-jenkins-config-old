@@ -74,6 +74,7 @@
         <assignedSIDs>
           <sid>zenon</sid>
           <sid>admin</sid>
+          <sid>dennis</sid>
         </assignedSIDs>
       </role>
       <role name="backend" pattern=".*">
