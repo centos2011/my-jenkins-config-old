@@ -27,8 +27,10 @@
       <role name="PDAX-Frontend" pattern="PDAX-Frontend.*">
         <permissions>
           <permission>hudson.model.Item.Cancel</permission>
+          <permission>hudson.model.Item.Read</permission>
           <permission>hudson.model.Item.Workspace</permission>
           <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.Item.Discover</permission>
         </permissions>
         <assignedSIDs>
           <sid>dennis-frontend</sid>
