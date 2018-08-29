@@ -28,9 +28,7 @@
         <permissions>
           <permission>hudson.model.Item.Cancel</permission>
           <permission>hudson.model.Item.Read</permission>
-          <permission>hudson.model.Item.Workspace</permission>
           <permission>hudson.model.Item.Build</permission>
-          <permission>hudson.scm.SCM.Tag</permission>
         </permissions>
         <assignedSIDs>
           <sid>dennis-frontend</sid>
