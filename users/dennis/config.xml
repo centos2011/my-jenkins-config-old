@@ -3,7 +3,7 @@
   <fullName>Dennis Joson</fullName>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAAAwoDkAibA6iXZ5e3NNxIoFlle26DEMzOjSzGNpgvTgrZ4lPHEz1Aqre6pLp+Pxe/biyVa8BuaEJ2JjV8dCsbe+qg==}</apiToken>
+      <apiToken>{AQAAABAAAABwTuAXZhtDkF91lDaN7Su7MArwxK6dj/8jr4z8EiSoOA7lisB11avMafd0aurovPI5kWT92fabOmDHWGeNTB08u9n2Rg/LBSuf9A2OebG1lScQBQQGehsCt1YbCUm0vMH/IwiY3VO+H700+BYnAKS0S1zoWaABkDwXC+dlMLlVyeo=}</apiToken>
     </jenkins.security.ApiTokenProperty>
     <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@2.1.18">
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
@@ -34,5 +34,8 @@
     <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.21">
       <emailAddress>dennis.joson@pdax.ph</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <timestamp>0</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
   </properties>
 </user>
